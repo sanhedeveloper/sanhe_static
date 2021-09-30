@@ -134,7 +134,7 @@ foreach "三和战投1期"
         <p class="P1">
             <div style="width:100%; height: 325px;">
                 <canvas id="chartjs"></canvas>
-                <script type="text/javascript" src="gaohua1_chart.js"></script>
+                <script type="text/javascript" src="./templates/gaohua1_chart.js"></script>
             </div>
         </p>
     </div>
@@ -228,7 +228,7 @@ foreach "三和战投1期"
         /*标题*/document.getElementById("maintitle").innerHTML = title + middle + date + end;
         /*--------------------------------------------------- WEEK VARIATION --------------------------------------------------*/
     //Read csv file
-    let filename = '../static/zonghui.csv';
+    let filename = './static/zonghui.csv';
     d3.csv(filename).then(function(loadedData){
 
         loadedData.forEach(productName => {
